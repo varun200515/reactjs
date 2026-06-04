@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3: Media Queries </title>
+    <style>
+        .myInfo{
+            background-color: rgb(219, 11, 11);
+            padding: 20px;
+        }
+        @media screen and (min-width: 600px) {
+            .myInfo{
+                font-size: 80px;
+            }
+            
+        }
+        @media screen and (min-width:300px){
+            .myInfo{
+                font-size: 30px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>change the font size of an element on difference screen sizes</h2>
+    <div class="myInfo">welcome to web development</div>
+    <p>HEllo ! Web page</p>
+</body>
+</html>

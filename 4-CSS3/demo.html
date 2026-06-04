@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>CSS3</title>
+
+    <style>
+        .abc{
+            width: 500px;
+            height: 0px;
+
+            /* Correct background syntax */
+            background: url("images-hd-desktop-wallpaper.jpg") no-repeat;
+
+            /* Correct spelling */
+            position: relative;
+
+            /* Animation */
+            animation: repeatit 2s linear infinite alternate;
+            }
+
+        .hello{
+            width: 500px;
+            height: 500px;
+
+            /* Radial Gradient */
+            background: radial-gradient(circle, red, yellow, green);
+        }
+
+        /* Animation definition */
+        @keyframes repeatit{
+            from{
+                left: 0px;
+            }
+
+            to{
+                left: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="abc"></div>
+    <div class="hello"></div>
+
+</body>
+</html>

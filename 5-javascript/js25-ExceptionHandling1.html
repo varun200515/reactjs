@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javaScirpt functions</title>
+    <script>
+        function divide(a,b){
+            try{
+                console.log("One");
+                if(b==0){
+                    throw new Error("Divide by zero is not allowed..Hello")
+                }
+                let result =a/b;
+                console.log(result);
+                console.log("End");
+            }//close try block
+            catch(error){
+                console.error("Program is Error :"+error)
+            }
+                }
+                divide(20,0);
+    </script>
+</head>
+<body>
+</body>
+</html>

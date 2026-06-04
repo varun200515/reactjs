@@ -1,0 +1,14 @@
+body {background-color: brown;}
+h1{background-color: rgb(46, 8, 215);}
+h3{background-color: rgb(41, 211, 15);}
+<html>
+ <head>
+    <title>Import Mycss file</title>
+        <link rel="stylesheet" href="mydata.css">  
+ </head>
+     <body>
+         <h3>WebDevelopment</h3>
+         <h1>Welcome UI Pages</h1>
+     </body>    
+    
+</html>
