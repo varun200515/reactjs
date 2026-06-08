@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Car booking -promise api</title>
+        <script>
+            function bookcar(){
+                return new Promise(function(resolve,reject){
+                    console.log("Sending car booking request...");
+                    setTimeout(function(){
+                        let carAvailable = true; 
+                        if(carAvailable){
+                            resolve("Car booked successfully!");
+                        } else {
+                            reject("Car booking failed. Please try again.");
+                        }
+                    }, 2000);
+                })
+            }
+            async function startBooking() {
+                console.log("Starting car booking process...");
+                try {
+                    let result = await bookcar();
+                    console.log(result);
+                    console.log("enjoy your ride!");
+                } catch (error) {
+                    console.error(error);
+                    console.log("sorry for the inconvenience, please try again later.");
+                }
+            }
+            startBooking();
+        </script>
+    </head>
+</html>

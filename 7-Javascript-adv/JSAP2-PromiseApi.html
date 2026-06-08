@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>javascript programming </title>
+        <script>
+            let mypromise = new Promise(function(resolve, reject){
+                let success =true;
+                if(success){
+                    resolve("all good");
+                }else{
+                    reject("something failed");
+                }
+            });
+            mypromise.then(function(result){
+                console.log(result);
+            }).catch(function(error){
+                console.log(error);
+            });
+        </script>
+    </head>
+</html>

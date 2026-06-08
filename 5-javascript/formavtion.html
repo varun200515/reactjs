@@ -1,0 +1,25 @@
+<head>
+    <script>
+        function loginValidation(){
+            var myuname=window.document.myform.myuname.value;
+            var mypassword=window.document.myform.mypassword.value;
+            if(myuname==null && myuname==""){
+                return false;
+            }
+            else if(mypassword.length<6){
+                alert("invalid username or password");
+                return false;
+            }
+            else{
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>javascript programming</h2>
+    <form name="myform" action="loginsuccess.html" onsubmit="return loginValidation()">
+    User name :<input type="text" name="myuname" placeholder="enter your name"><br>
+    Password :<input type="password" name="mypassword" placeholder="enter your password"><br>
+    <input type="submit" value="submit">
+</body>
